@@ -1,21 +1,64 @@
 # Batchline — factory-to-audit operations
+## Repository
+
+[View source code on GitHub](https://github.com/jeevvika/batchline-factory-audit)
 
 Batchline is a role-oriented operations prototype for a small South Indian snack maker. Its central design idea is a **batch trail**: an order, production run, stock movement, tax invoice and payment belong to one auditable story. The visual language borrows from shop-floor ledgers and letterpress packaging—warm stock-paper surfaces, dark ink, a tamarind-red signal color, batch stamps and tabular figures.
 
+
 ## Run it
 
-This project uses the initialized React + TypeScript + Express/tRPC + Drizzle/MySQL starter. With Node 20+ and pnpm 10.18 installed, configure `DATABASE_URL` and the Manus OAuth environment required by the starter, then run:
+### Prerequisites
+- Node.js 20 or later
+- pnpm 10.18
+- MySQL database
+- Required environment variables configured
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jeevvika/batchline-factory-audit.git
+cd batchline-factory-audit
+```
+
+Install dependencies:
 
 ```bash
 pnpm install
+```
+
+Configure the required environment variables, including `DATABASE_URL` and the Manus OAuth settings required by the starter.
+
+Run database migrations:
+
+```bash
 pnpm db:migrate
+```
+
+Load benchmark data:
+
+```bash
 pnpm seed:benchmark
+```
+
+Start the development server:
+
+```bash
 pnpm dev
 ```
 
-Open the development site at `http://localhost:3000`. For a production build use `pnpm build` and `pnpm start`. The benchmark seed is idempotent: if the `benchmark-demo` workspace already exists, it leaves it untouched. Reset the UI demo only through **Reset demo**; this resets the current browser state and the demo API saves state back to the shared workspace. Do not run a destructive database reset to replay the scenario.
+Open `http://localhost:3000` in your browser.
 
-The app uses only synthetic sample customer/company data. The sample GSTINs are fictitious and the site is not a GST filing service.
+For production:
+
+```bash
+pnpm build
+pnpm start
+```
+
+**Note:** Verify the commands and environment configuration on a fresh setup before submitting. On Windows PowerShell, the development server may require the documented alternative startup command if the `pnpm dev` script fails.
 
 ## Implemented in this prototype
 
