@@ -103,3 +103,35 @@ The current invoice/production records are demo scenario views, not legally issu
 ## Demo Video
 
 Project demonstration video: [Watch KaiManam Demo](https://drive.google.com/file/d/1jusNmwvZh5BsBohoMX4NHDDNstPn7iOv/view?usp=sharing)
+
+## Demo Access and Test Roles
+
+This prototype uses a role-selection dropdown for demonstration purposes.
+
+Available demo roles:
+- Owner
+- Salesman
+- Factory Admin
+- Production
+- Auditor
+
+**Note:** These roles are for UI demonstration only. Separate authenticated accounts and secure role-based access control are not implemented in this prototype.
+
+## Run Locally
+
+Prerequisites:
+- Node.js
+- pnpm
+
+Steps:
+
+1. Clone the repository.
+2. Open the project folder in VS Code.
+3. Install dependencies using `pnpm install`.
+4. Start the development server:
+
+```powershell
+$env:NODE_ENV="development"; pnpm exec tsx watch server/_core/index.ts
+```
+
+5. Open http://localhost:3000 in your browser.
