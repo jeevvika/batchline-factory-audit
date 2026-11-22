@@ -1,0 +1,17 @@
+{
+  "factory": { "name": "KAI MANAM", "state": "Tamil Nadu", "financialYear": "2026-27", "demoOnly": true },
+  "products": [{ "sku": "MRK-200", "name": "Murukku", "packSize": "200 g", "sellingPriceRupees": 50, "gstPercent": 5, "hsn": "1905", "openingFinishedPackets": 50 }],
+  "customers": [
+    { "code": "RETAILER-A", "name": "Retailer A", "type": "retailer", "state": "Tamil Nadu", "gstin": "33AABCU9603R1ZV" },
+    { "code": "DISTRIBUTOR-B", "name": "Distributor B", "type": "distributor", "state": "Karnataka", "gstin": "29AABCU9603R1ZX" }
+  ],
+  "bom": { "productSku": "MRK-200", "batchYieldPackets": 200, "components": [
+    { "item": "Flour", "quantity": 40, "unit": "kg", "openingQuantity": 100, "openingRateRupees": 42, "receiptQuantity": 60, "receiptRateRupees": 45 },
+    { "item": "Cooking oil", "quantity": 10, "unit": "L", "openingQuantity": 30, "rateRupees": 140 },
+    { "item": "Salt & spice mix", "quantity": 1.2, "unit": "kg", "openingQuantity": 5, "rateRupees": 200 },
+    { "item": "200 g pouch", "quantity": 200, "unit": "pcs", "openingQuantity": 500, "rateRupees": 2.5 },
+    { "item": "Carton · 20 pk", "quantity": 10, "unit": "pcs", "openingQuantity": 30, "rateRupees": 15 }
+  ]},
+  "benchmarkRun": { "flourIssuedKg": 40, "oilIssuedL": 10.5, "spiceIssuedKg": 1.2, "goodOutputPackets": 188, "damagedPouches": 6, "cartonsUsed": 9, "labourRupees": 1200, "gasPowerRupees": 600 },
+  "expectedChecks": { "flourClosingKg": 120, "oilClosingL": 19.5, "pouchClosingPieces": 306, "finishedPacketsAfterRun": 238, "finishedPacketsAfterRetailerDispatch": 88, "yieldVariancePercent": -6, "oilVariancePercent": 5, "retailerInvoiceTaxableRupees": 7500, "retailerCgstRupees": 187.5, "retailerSgstRupees": 187.5, "retailerGrossRupees": 7875, "retailerPaidRupees": 4000, "retailerOutstandingRupees": 3875, "distributorShortagePackets": 32, "weightedAverageFlourRateRupeesPerKg": 43.125, "materialsPackagingRupees": 4055, "batchCostIncludingOverheadRupees": 5855, "costPerGoodPacketRupeesRounded": 31.14 }
+}
