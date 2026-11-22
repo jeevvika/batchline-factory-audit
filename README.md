@@ -99,3 +99,7 @@ This is a reviewable visual/functional prototype, not a production accounting or
 The role dropdown is a **role preview**, not secure role-based access control. It demonstrates distinct intended views but does not restrict server mutations by authenticated roles. The top-right account control starts the starter's real Manus OAuth flow; fake test users/passwords and development-mode auth bypasses are intentionally not provided. A production submission still needs authenticated user-to-role assignment, server-side role authorization, admin user management and secured operational APIs. Likewise the order draft persists in browser storage but has no conflict-safe sync queue. The CSV controls are prototype-shaped exports, not a complete set of reconciled monthly auditor workbooks; reports beyond the sales register and movement ledger need normalized transactional records before being treated as official.
 
 The current invoice/production records are demo scenario views, not legally issued invoices. Replace sample GSTINs, invoice series, tax validation and period controls before real use. No hosted/public production link or real evaluator logins are claimed by this README.
+
+## Demo Video
+
+Project demonstration video: [Watch KaiManam Demo](https://drive.google.com/file/d/1jusNmwvZh5BsBohoMX4NHDDNstPn7iOv/view?usp=sharing)
